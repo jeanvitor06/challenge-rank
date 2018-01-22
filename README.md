@@ -16,7 +16,8 @@ This API gets the top five apps from each google play category.
 * Postgres (Knex + Objection.js) 
 
 ### Use
-* list apps: localhost:3001/rank 
+* list apps: localhost:3001/rank
+* average time: 30 seconds
 
 ## For Dev
 
