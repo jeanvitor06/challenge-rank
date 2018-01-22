@@ -1,9 +1,10 @@
 export interface IApp {
+  id?: number;
   name: string;
   developerCompany: string;
-  rating: number;
+  rating: string;
   icon: string;
-  value: number;
+  value: string;
   bundleId: string;
   categoryName: string;
 }

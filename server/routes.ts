@@ -4,5 +4,5 @@ import { router as api } from './modules/routes/routes';
 
 export const router = Router();
 
-router.use('/rank', api);
+router.use('/', api);
 router.use(errors.notFound);

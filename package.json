@@ -15,6 +15,7 @@
     "develop": "gulp",
     "develop-update": "yarn --allow-root",
     "compile": "gulp server-compile",
+    "clean": "gulp server-clean",
     "migrate": "knex migrate:latest",
     "gulp": "gulp",
     "knex": "knex",
@@ -32,6 +33,7 @@
   "dependencies": {
     "body-parser": "1.18.2",
     "express": "4.16.2",
+    "google-play-scraper": "^4.0.0",
     "knex": "0.14.2",
     "objection": "0.9.4",
     "pg": "7.4.0",
@@ -46,7 +48,6 @@
     "@types/request": "2.0.9",
     "eslint": "4.13.1",
     "gulp": "3.9.1",
-    "gulp-autoprefixer": "4.0.0",
     "gulp-babel": "7.0.0",
     "gulp-concat": "2.6.1",
     "gulp-eslint": "4.0.0",

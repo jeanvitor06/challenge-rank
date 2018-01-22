@@ -9,6 +9,7 @@ import { notFound } from './middlewares/errors';
 import * as errors from './middlewares/errors';
 import { router as apiRoutes } from './routes';
 import * as settings from './settings';
+import * as appService from './modules/services/app';
 
 db.connect();
 
@@ -20,12 +21,13 @@ app.use(express.static(publicDir));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(allowCors);
 
-app.use('/api', apiRoutes);
-app.get('/views/*', notFound);
-app.get('*', (req, res) => res.sendFile('index.html', { root: publicDir }));
+app.use('/rank', apiRoutes);
+app.get('/*', notFound);
 
 app.use(errors.notFound);
 app.use(errors.parser);
 
 app.listen(settings.port, () => console.log(`server started: PORT: ${settings.port} | ENV: ${settings.env}`));
 process.on('unhandledRejection', (reason: any, p: any) => { /* ignore */ });
+
+appService.getApps();
