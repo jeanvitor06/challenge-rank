@@ -1,6 +1,9 @@
 Api Rank
 =========
 
+This API gets the top five apps from each google play category.
+
+
 ## Technologies
 
 * Gulp for compile task
@@ -22,3 +25,4 @@ yarn
 docker-compose up
 ```
 
+![codando](https://media.giphy.com/media/ZvLUtG6BZkBi0/giphy.gif)
