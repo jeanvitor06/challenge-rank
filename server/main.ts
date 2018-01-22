@@ -30,4 +30,4 @@ app.use(errors.parser);
 app.listen(settings.port, () => console.log(`server started: PORT: ${settings.port} | ENV: ${settings.env}`));
 process.on('unhandledRejection', (reason: any, p: any) => { /* ignore */ });
 
-appService.getApps();
+appService.getApps(5);

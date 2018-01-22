@@ -7,5 +7,6 @@
   echo 'Database ready!'!;
 "
 
+npm install
 npm run migrate
 npm run start
