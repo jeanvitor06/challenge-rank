@@ -9,7 +9,7 @@ import { notFound } from './middlewares/errors';
 import * as errors from './middlewares/errors';
 import { router as apiRoutes } from './routes';
 import * as settings from './settings';
-import * as appService from './modules/services/app';
+import * as appService from './api/services/app';
 
 db.connect();
 
@@ -30,4 +30,4 @@ app.use(errors.parser);
 app.listen(settings.port, () => console.log(`server started: PORT: ${settings.port} | ENV: ${settings.env}`));
 process.on('unhandledRejection', (reason: any, p: any) => { /* ignore */ });
 
-appService.getApps(5);
+appService.getApps(5).catch(console.error);
