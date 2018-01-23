@@ -15,9 +15,6 @@ This API gets the top five apps from each google play category.
 * Typescript
 * Postgres (Knex + Objection.js) 
 
-### Use
-* list apps: localhost:3001/rank
-
 ## For Dev
 
 ```bash
