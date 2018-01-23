@@ -3,6 +3,9 @@ Api Rank
 
 This API gets the top five apps from each google play category.
 
+<a href="https://codeclimate.com/github/jeanvitor06/challenge-rank/maintainability"><img src="https://api.codeclimate.com/v1/badges/f074cf548f32c90f92db/maintainability" /></a>
+
+<a href="https://snyk.io/test/github/jeanvitor06/challenge-rank?targetFile=package.json"><img src="https://snyk.io/test/github/jeanvitor06/challenge-rank/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/jeanvitor06/challenge-rank?targetFile=package.json" style="max-width:100%;"></a>
 
 ## Technologies
 
