@@ -2,5 +2,4 @@
 .data
 Dockerfile
 docker/dev/Dockerfile
-docker/prod/Dockerfile
 scripts

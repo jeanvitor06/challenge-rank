@@ -13,12 +13,12 @@ async function getAppInfo(apps: any): Promise<any> {
     const detailsInfo = $('.details-info');
 
     return {
-      category: apps.categoryName,
-      developer: detailsInfo.find('span[itemprop="name"]').text(),
+      categoryName: apps.categoryName,
+      developerCompany: detailsInfo.find('span[itemprop="name"]').text(),
       icon: detailsInfo.find('img.cover-image').attr('src'),
       value: detailsInfo.find('meta[itemprop=price]').attr('content'),
       bundleId: a.slice(23, a.length),
-      title: detailsInfo.find('.document-title').text().trim(),
+      name: detailsInfo.find('.document-title').text().trim(),
       rating: parseFloat($('.rating-box').find('div.score').text().replace(',', '.')) || 0
     };
   });
@@ -29,8 +29,8 @@ async function getAppInfo(apps: any): Promise<any> {
 export async function scrapDetailsApp(appsUrl: any): Promise<any> {
   let apps = [];
   for (let app of appsUrl) {
-    //console.log(await getAppInfo(app));
     apps.push(await getAppInfo(app));
   }
+  console.log('Finished Scrap');
   return apps;
 }

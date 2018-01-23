@@ -8,8 +8,7 @@ export async function list(): Promise<App[]> {
 
 export async function insert(model: IApp[], transaction: Transaction = null): Promise<void> {
   for (let m of model) {
-    const app = await findByBundleId(m.bundleId);
-    app ? await update(m) : await App.query(transaction).insert(m);
+    await App.query(transaction).insert(m);
   }
 }
 
