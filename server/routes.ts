@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import * as errors from './middlewares/errors';
-import { router as api } from './modules/routes/routes';
+import { router as api } from './api/routes/routes';
 
 export const router = Router();
 

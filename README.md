@@ -17,7 +17,6 @@ This API gets the top five apps from each google play category.
 
 ### Use
 * list apps: localhost:3001/rank
-* average time: 30 seconds
 
 ## For Dev
 
