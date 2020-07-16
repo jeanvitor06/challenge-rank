@@ -35,9 +35,9 @@
     "cheerio": "1.0.0-rc.2",
     "express": "4.16.2",
     "knex": "0.14.2",
-    "objection": "0.9.4",
+    "objection": "1.0.0",
     "pg": "7.4.0",
-    "request": "2.83.0",
+    "request": "2.88.0",
     "request-promise": "^4.2.2",
     "source-map-support": "0.5.0",
     "tslib": "1.8.1"
